@@ -1,0 +1,39 @@
+http://localhost:8080/api 		: Base URL 
+
+Account related  
+
+GET http://localhost:8080/api/user/accountInfo/{email}
+PUT http://localhost:8080/api/user/addFunds
+
+Admin related  
+
+POST http://localhost:8080/api/admin/addMedicine
+DELETE http://localhost:8080/api/admin/deleteMedicineById/{mid}
+GET http://localhost:8080/api/admin/getAllMedicine
+GET http://localhost:8080/api/admin/getMedicineById/{mid}
+POST http://localhost:8080/api/admin/login
+PUT http://localhost:8080/api/admin/updateMedicine
+
+
+Cart related 
+
+POST http://localhost:8080/api/cart/getMedicine
+POST http://localhost:8080/api/cart/placeOrder/{email}/{total}
+
+Login related 
+
+PUT http://localhost:8080/api/user/editUser
+GET http://localhost:8080/api/user/findUser/{email}
+POST http://localhost:8080/api/user/login
+POST http://localhost:8080/api/user/signUp
+
+Medicine related 
+
+GET http://localhost:8080/api/medicine/getAllMedicine
+GET http://localhost:8080/api/medicine/search/{uses}
+
+Order related 
+
+GET http://localhost:8080/api/Orders/allOrdersDetails
+GET http://localhost:8080/api/Orders/orderDetails/{email}
+
